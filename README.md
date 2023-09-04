@@ -8,3 +8,5 @@ The [minimal working example](https://github.com/christofhapp/batflight3d/releas
 ## Workflow A: aslkdfj
 this is workflow a
 ![](https://christofhapp.lima.zone/wp-content/uploads/2023/09/alldronepoints.png)
+
+!(https://christofhapp.lima.zone/wp-content/uploads/2023/09/slider-1024x451.png)
