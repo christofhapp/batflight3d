@@ -121,7 +121,7 @@ Now that you have your updated DRONE_SIM_PTS, you can also recalculate your DRON
 - If you are happy with the result, save the **DRONE_SIM_PTS** as a calibration basis for the detection of bats in the next workflow.
 
 ## Workflow B: Detecting bats
-
+This workflow is easier, because we did everything already
 
 
 
