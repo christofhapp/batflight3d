@@ -1,6 +1,7 @@
 # Table of Contents
 - [Download](#download)
 - [Instructions](#instructions)
+  - [Workflow A: Calibration of the Camera System](#workflow-a-calibration-of-the-camera-system)
 - [Prerequisites Hardware](#prerequisites-hardware)
 
 # Download
