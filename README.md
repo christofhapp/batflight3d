@@ -121,7 +121,13 @@ Now that you have your updated DRONE_SIM_PTS, you can also recalculate your DRON
 - If you are happy with the result, save the **DRONE_SIM_PTS** as a calibration basis for the detection of bats in the next workflow.
 
 ## Workflow B: Detecting bats
-This workflow is easier, because we did everything already
+In Workflow A we derived a calibration. In the directory of the minimal working example is a folder named **bat_recording**. The images were taken after the calibration drone flight without moving the camera setup. That is why you can use the **DRONE_SIM_PTS** from Workflow A as the calibration basis. But first, open the images:
+- Click the button **Load Images...**.
+- Navigate to the folder **bat_recording** and choose **cam1,cam2** and **imagelist.csv**.
+Detect all image points:
+- menu: **Camera Images &rarr; Loop over Images and detect Points for each Camera**
+You can see the progress in the status bar.
+- menu: **Calibration &rarr; Calculate STEREO_IM_PTS**
 
 
 
