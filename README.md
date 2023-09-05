@@ -2,7 +2,8 @@
 - [Download](#download)
 - [Instructions](#instructions)
   - [Workflow A: Calibration of the Camera System](#workflow-a-calibration-of-the-camera-system)
-  - [Workflow B: Calibration of the Camera System](#workflow-b-detecting-bats)
+  - [Workflow B: Detecting Bats](#workflow-b-detecting-bats)
+  - [Workflow C: Deeper Evaluation of Flightpaths](#workflow-c-deeper-evaluation-of-flightpaths)
 - [Prerequisites Hardware](#prerequisites-hardware)
 
 # Download
@@ -131,7 +132,9 @@ You can see the progress in the status bar.
 - menu: **Calibration &rarr; Calculate STEREO_IM_PTS**
 
 
+## Workflow C: Deeper Evaluation of Flightpaths
 
+asdf
 
 
 
