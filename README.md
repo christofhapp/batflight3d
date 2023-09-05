@@ -30,21 +30,25 @@ The two Cameras have to be time synchronized and each image pair needs one times
 in a folder and name the images alphanumerically (1.png, 2.png, ...). Do the same for the second camera with the same amount
 of images and the same names. Also place an imagelist.csv with the timestamps at which each imagepair was taken:
 
+```bash
 project
-|__ cam1
-|   |__ 1.png
-|   |__ 3.png
-|   |__ 5.png
-|
-|__ cam2
-|   |__ 1.png
-|   |__ 3.png
-|   |__ 5.png
-|
-|___ imagelist.csv
+├── cam1
+│   ├── 1.png
+│   ├── 3.png
+│   ├── 5.png
+│
+├── cam2
+│   ├── 1.png
+│   ├── 3.png
+│   ├── 5.png
+│
+├── imagelist.csv
+```
 
-imagalist.csv
+imagelist.csv
+```
 nr,datetime
 1, 2022-06-23 21:41:58.701641
 3, 2022-06-23 21:42:02.034981
 5, 2022-06-23 21:42:05.368321
+```
