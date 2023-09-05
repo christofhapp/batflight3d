@@ -8,7 +8,10 @@ The [minimal working example](https://github.com/christofhapp/batflight3d/releas
 ## Workflow A: aslkdfj
 For the calibration of the camera system follow the steps in this section. All steps are based on a minimal example, but work the
 same with your own data.
-![](https://christofhapp.lima.zone/wp-content/uploads/2023/09/alldronepoints.png)
+
+BUTTONS:
+![](/buttons.PNG)
+ENDE
 ![](https://christofhapp.lima.zone/wp-content/uploads/2023/09/slider-1024x451.png)
 
 ### Load images
