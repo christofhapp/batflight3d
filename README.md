@@ -36,8 +36,74 @@ decode and save it:
 The button turns green when the drone points are loaded. If you want to ook at the drone flightpath, you can 3D plot it:
 - menu: **3D Plot &rarr; 3Dplot ALL drone points**
 
-### Choose drone points for a preliminary synchronization of the drone and camera signal
-You now want to choose about 5 to 8 drone points for a preliminary synchronization. The drone points should not be very close together, so move the slider a good bit in order to get well distributed drone points. If you find a good image pair where you can identify the drone in the yellow circles, double click it in both images and they turn green. A window opens to show you how much points you have added already.
+### Preliminary synchronization of the drone and camera signal
+You now want to choose about 5 to 8 drone points for a preliminary synchronization. The drone points should not be very close together, so move the slider a good bit in order to get well distributed drone points. If you find a good image pair where you can identify the drone in the yellow circles:
+- Double click it in both images and they turn green.
+A window opens to show you how much points you have added already.
+
+![](images/yellowcircles.PNG)
+
+If there is just one orange circle per image and you are sure it is the drone:
+- Hit the new button on the bottom **Add orange points pair to points_clicked.csv**
+
+If you want to remove points: 
+- Button **Add Image Points Options &rarr; delete point pair (double-click)**
+
+You can also add points by saving the exact clicking position if they e.g. didn't get detected by the algorithm:
+- Button **Add Image Points Options &rarr; add points by exact clicking position (double-click)**
+
+All the points got saved automatically in your folder in a file named **points_clicked.csv**.
+- Load the **points_clicked.csv** by clicking on the button **STEREO_SIM_PTS** and choose **points_clicked.csv**.
+
+Now estimate a synchronization:
+- menu: **Calibration &rarr; Calculate dt_cam_drone**
+
+You get a graph. If it has a well defined peak, a good preliminary synchronization is achieved:
+- Save the synchronization by clicking the button **SAVE dt_cam_drone as .txt**
+
+![](images/save_dtcamdrone.PNG)
+
+### Preliminary calibration
+Now that you have a synchronization, you can find the drone points corresponding to the image points. We do that for our clicked points:
+- menu: **Calibration &rarr; Calculate DRONE_SIM_PTS**
+The DRONE_SIM_PTS (drone stereo image points) button becomes green:
+- Click on the **Calibration** button
+A window opens showing the calibration errors and you can visually check the calibration by clicking on the **plot DRONE_SIM_PTS** button. If the calibration looks good enough, save the calibration by the **save DRONE_SIM_PTS** button.
+
+![](images/calibration_save.PNG)
+
+### Automatic detection of all images points
+Now you can automatically detect all possible image points.
+- menu: **Camera Images &rarr; Loop over Images and detect Points for each Camera
+- Choose filenames (one for each camera) and wait for it to finish.
+You see the progress in the status bar.
+
+Now you need to calculate the STEREO_IM_PTS from the the single camera image point files:
+- menu: **Calibration &rarr; Calculate STEREO_IM_PTS**
+- Choose a filname and wait for it to finish.
+- Load the resulting file by clicking on the button **STEREO_IM_PTS**.
+Calcualte the new DRONE_SIM_PTS from the STEREO_IM_PTS:
+-  menu: **Calibration &rarr; Calculate DRONE_SIM_PTS**
+Because you have a preliminary calibration already, it asks you if you want to use that calibration to decide if an image point is a drone point or if it is to far away and may be something else.
+- Click **Ok**, 15 meters is good for now.
+
+<details>
+<summary>Click here for an explanation</summary>
+You can see that some STEREO_IM_PTS did not become DRONE_IM_PTS, probably because the turbine or a bird got detected. That is fine. 
+If we calcualte the DRONE_SIM_PTS again and choose x=0 we do not use the existing calibration and simply use all image points we found and correlate it to a drone point, even if the 3D image point is far away from the actual drone gps point based on the current calibration. It may look like that.
+![](images/calib_outliers.PNG)
+</details>
+
+
+### Use image points to refine synchronization
+Now that you have much more image points, you can refine your synchronization:
+
+
+
+
+
+
+
 
 ## Prerequisites Hardware
 For the 3D reconstruction of flying animals with 3D Animal Flight Detector time synchronized images of two cameras are needed
