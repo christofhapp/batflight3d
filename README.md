@@ -143,8 +143,7 @@ asdf
 
 
 ## Prerequisites Hardware
-For the 3D reconstruction of flying animals with 3D Animal Flight Detector time synchronized images of two cameras are needed
-as well as a drone flight log of a flight in front of the cameras. The points of the drone flight should be as evenly distributed in the sensed volume as possible.
+For the 3D reconstruction of flying animals with Batflight 3D, time synchronized images of two (thermal) cameras are needed as well as a drone flight log of a flight in front of the cameras. The points of the drone flight should be as evenly distributed in the sensed volume as possible. 
 
 ### Cameras
 The two Cameras have to be time synchronized and each image pair needs one timestamp. Place the images of the fi rst camera
