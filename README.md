@@ -147,6 +147,7 @@ On the bottom you see the flightpath with the number of points. Above the plot y
 You can also see the flightspeed e.g.:
 - Click on a point of a flightpath
 - menu: **Options &rarr; plot speed**
+
 The result may look like that and shows you the speed of the bat (or flying object):
 
 ![](images/flightpaths_plotspeed.PNG)
