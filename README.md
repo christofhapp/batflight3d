@@ -2,6 +2,7 @@
 - [Download](#download)
 - [Instructions](#instructions)
   - [Workflow A: Calibration of the Camera System](#workflow-a-calibration-of-the-camera-system)
+  - [Workflow B: Calibration of the Camera System](#workflow-b-detecting-bats)
 - [Prerequisites Hardware](#prerequisites-hardware)
 
 # Download
