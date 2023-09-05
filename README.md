@@ -24,9 +24,9 @@ Below you fi nd a slider to navigate through the images:
 ### Load drone points
 
 
-## Prerequisites
+## Prerequisites Hardware
 For the 3D reconstruction of flying animals with 3D Animal Flight Detector time synchronized images of two cameras are needed
-as well as a drone flight log of a flight in front of the cameras.
+as well as a drone flight log of a flight in front of the cameras. The points of the drone flight should be as evenly distributed in the sensed volume as possible.
 
 ### Cameras
 The two Cameras have to be time synchronized and each image pair needs one timestamp. Place the images of the fi rst camera
@@ -54,4 +54,16 @@ nr,datetime
 1, 2022-06-23 21:41:58.701641
 3, 2022-06-23 21:42:02.034981
 5, 2022-06-23 21:42:05.368321
+```
+
+### Drone Log File
+A drone log file is needed with a timestamp, the latitudes and longitudes in the decimal form and the height above ground in
+meters:
+
+DRONE_PTS.csv
+```
+datetime,lat,lon,height
+2022-06-23 19:42:26.386,49.42217084716835,11.447858470221677,0.0
+2022-06-23 19:42:26.486,49.42217088440474,11.447858501829796,0.0
+2022-06-23 19:42:26.586,49.42217094773711,11.447858540094895,0.0
 ```
