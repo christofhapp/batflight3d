@@ -8,7 +8,7 @@
 
 # Download
 ## Download Windows .exe
-Download [batflight3d.exe v1.0](https://github.com/christofhapp/batflight3d/releases/download/v1.0/Batflight3D.exe).
+Download [Batflight3D.exe v1.0](https://github.com/christofhapp/batflight3d/releases/download/v1.0/Batflight3D.exe).
 
 ## Download minimal working example
 The [minimal working example](https://github.com/christofhapp/batflight3d/releases/download/v1.0/minimal_working_example.zip) contains data to try the software with a working data set. It is used in the instructions and helps to get used to the software before generating your own data.
