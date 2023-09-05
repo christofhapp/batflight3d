@@ -70,6 +70,11 @@ The DRONE_SIM_PTS (drone stereo image points) button becomes green:
 - Click on the **Calibration** button
 A window opens showing the calibration errors and you can visually check the calibration by clicking on the **plot DRONE_SIM_PTS** button. If the calibration looks good enough, save the calibration by the **save DRONE_SIM_PTS** button.
 
+<details>
+<summary>Click here for an explanation of the DRONE_SIM_PTS</summary>
+The DRONE_SIM_PTS (drone stereo image points) are the basis for the calibration. Every row contains the 2D coordinates of the drone in both images and the corresponding 3D drone GPS points. So if they are safed, the exact same calibration can be reproduced by just loading them and again click on the **Calibration** button.
+</details>
+
 ![](images/calibration_save.PNG)
 
 ### Automatic detection of all images points
@@ -90,13 +95,31 @@ Because you have a preliminary calibration already, it asks you if you want to u
 <details>
 <summary>Click here for an explanation</summary>
 You can see that some STEREO_IM_PTS did not become DRONE_IM_PTS, probably because the turbine or a bird got detected. That is fine. 
-If we calcualte the DRONE_SIM_PTS again and choose x=0 we do not use the existing calibration and simply use all image points we found and correlate it to a drone point, even if the 3D image point is far away from the actual drone gps point based on the current calibration. It may look like that.
-![](images/calib_outliers.PNG)
+If we calcualte the DRONE_SIM_PTS again and choose x=0 we do not use the existing calibration and simply use all image points we found and correlate it to a drone point, even if the 3D image point is far away from the actual drone gps point based on the current calibration. It may look like that:
+<br>
+<IMG src="images/calib_outliers.PNG"/>
+<br>
+In this case you see that most errors are between 0 and 20 meters. A few values are above 60 meters of error, so it would make sense to choose a new x of maybe 50 meters for a new calculation of the DRONE_SIM_PTS.
 </details>
 
-
 ### Use image points to refine synchronization
-Now that you have much more image points, you can refine your synchronization:
+Now that you have much more DRONE_SIM_PTS, you can refine your synchronization:
+-  menu: **Calibration &rarr; Calculate dt_cam_drone**
+Because now you have > 10 DRONE_SIM_PTS, it locally shifts the drone and camera signal. The resulting curve may look like that:
+
+![](images/refine_sync.PNG)
+
+The result is a better synchronization. Save the new dt_cam_drone:
+- Click on the button **SAVE dt_cam_drone as .txt** and overwrite the old file (or choose a new name).
+
+Now recalculate the DRONE_IM_PTS with your new dt_cam_drone:
+-  menu: **Calibration &rarr; Calculate DRONE_SIM_PTS**
+
+Now that you have your updated DRONE_SIM_PTS, you can also recalculate your DRONE_SIM_PTS
+- Click on the button **Calibration**
+- If you are happy with the result, save the **DRONE_SIM_PTS** as a calibration basis for the detection of bats in the next workflow.
+
+## Workflow B: Detecting bats
 
 
 
