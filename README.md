@@ -132,12 +132,29 @@ In Workflow A we derived a calibration. In the directory of the minimal working 
 Detect all image points:
 - menu: **Camera Images &rarr; Loop over Images and detect Points for each Camera**
 You can see the progress in the status bar.
+- Click button **<-DRONE_SIM_PTS->**, choose the **DRONE_SIM_PTS** from **Workflow A** and click on button **Calibration**
 - menu: **Calibration &rarr; Calculate STEREO_IM_PTS**
+If you have the STEREO_IM_PTS, you can look at the results:
+- menu: **3D Plot &rarr; 3Dplot ALL IM points -> Flightpaths**
+The result may look like that:
+
+![](images/flightpaths.PNG)
+
+On the bottom you see the flightpath with the number of points. Above the plot you find some information on the points you clicked. If you clicked on a minimum of two points, you can see a line between them and the information in the status bar above the plot shows you some information on the last clicked point and some differential information between the two points like distance in meters and time difference in seconds.
+
+![](images/flightpaths_diff.PNG)
+
+You can also see the flightspeed e.g.:
+- Click on a point of a flightpath
+- menu: **Options &rarr; plot speed**
+The result may look like that and shows you the speed of the bat (or flying object):
+
+![](images/flightpaths_plotspeed.PNG)
 
 
 ## Workflow C: Deeper Evaluation of Flightpaths
 
-asdf
+more to come....
 
 
 
