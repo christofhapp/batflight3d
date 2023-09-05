@@ -11,6 +11,7 @@
 
 ## Download Application
 You can Download the Application as a Windows .exe [Batflight3D.exe v1.0](https://github.com/christofhapp/batflight3d/releases/download/v1.0/Batflight3D.exe).
+
 Or, if you want to compile it yourself with Python, you can install all the software prerequisites and use the thermodata.py
 
 ## Download minimal working example
@@ -28,6 +29,7 @@ same with your own data.
 ### Load images
 - Load the images by clicking on the **Load Images...** button.
 - Navigate to the folder **calibration flight** of the minimal example and choose the folders **cam1, cam2** and the **imagelist.csv**.
+
 You should now be able to see the first imagepair. Below the images you can find some helpful tools including pan, zoom and reset.
 Use the image slider to navigate through the images.
 If you move the slider, yellow or orange circles may appear. These points are detected by 2D detection and may be the drone, flying animals or distortions.
@@ -39,7 +41,9 @@ decode and save it:
 - menu: **Drone Points &rarr; decode DJI .TXT and save as .CSV**
 - Choose file **DJIFlightRecord 2022-06-23 [21-42-26].txt** and save it as **DRONE_PTS.csv** in the same folder.
 - Open **DRONE_PTS.csv** by clicking on the button **DRONE_PTS**
+
 The button turns green when the drone points are loaded. If you want to ook at the drone flightpath, you can 3D plot it:
+
 - menu: **3D Plot &rarr; 3Dplot ALL drone points**
 
 ### Preliminary synchronization of the drone and camera signal
