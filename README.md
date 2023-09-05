@@ -5,10 +5,13 @@
   - [Workflow B: Detecting Bats](#workflow-b-detecting-bats)
   - [Workflow C: Deeper Evaluation of Flightpaths](#workflow-c-deeper-evaluation-of-flightpaths)
 - [Prerequisites Hardware](#prerequisites-hardware)
+- [Prerequisites Software](#prerequisites-software)
 
 # Download
-## Download Windows .exe
-Download [Batflight3D.exe v1.0](https://github.com/christofhapp/batflight3d/releases/download/v1.0/Batflight3D.exe).
+
+## Download Application
+You can Download the Application as a Windows .exe [Batflight3D.exe v1.0](https://github.com/christofhapp/batflight3d/releases/download/v1.0/Batflight3D.exe).
+Or, if you want to compile it yourself with Python, you can install all the software prerequisites and use the thermodata.py
 
 ## Download minimal working example
 The [minimal working example](https://github.com/christofhapp/batflight3d/releases/download/v1.0/minimal_working_example.zip) contains data to try the software with a working data set. It is used in the instructions and helps to get used to the software before generating your own data.
@@ -182,3 +185,8 @@ datetime,lat,lon,height
 2022-06-23 19:42:26.486,49.42217088440474,11.447858501829796,0.0
 2022-06-23 19:42:26.586,49.42217094773711,11.447858540094895,0.0
 ```
+
+## Prerequisites Software
+Python version and List of packages and versions here
+
+### pipenv
