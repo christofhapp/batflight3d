@@ -63,7 +63,7 @@ You can also add points by saving the exact clicking position if they e.g. didn'
 - Button **Add Image Points Options &rarr; add points by exact clicking position (double-click)**
 
 All the points got saved automatically in your folder in a file named **points_clicked.csv**.
-- Load the **points_clicked.csv** by clicking on the button **STEREO_SIM_PTS** and choose **points_clicked.csv**.
+- Load the **points_clicked.csv** by clicking on the button **STEREO_IM_PTS** and choose **points_clicked.csv**.
 
 Now estimate a synchronization:
 - menu: **Calibration &rarr; Calculate dt_cam_drone**
