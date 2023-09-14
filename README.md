@@ -211,3 +211,6 @@ datetime,lat,lon,height
 Python version and List of packages and versions here
 
 ### pipenv
+
+## Contact
+christof.happ@umit-tirol.at
